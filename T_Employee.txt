@@ -1,0 +1,35 @@
+/* DB作成 */
+CREATE DATABASE 20160601_EmployeeManagementSystem;
+
+/* TABLE作成 */
+CREATE TABLE T_EMPLOYEE(
+    ID VARCHAR(6) PRIMARY KEY,
+    NAME VARCHAR(20),
+    SECTION VARCHAR(20),
+    PHONE VARCHAR(20),
+    PASSWORD VARCHAR(20)
+);
+
+/* RECORD挿入 */
+INSERT INTO T_EMPLOYEE
+    (ID, NAME, SECTION, PHONE, PASSWORD)
+    VALUES('Em0001', '鈴木一郎', '研修部', '7700-0001', 'password');
+INSERT INTO T_EMPLOYEE
+    (ID, NAME, SECTION, PHONE, PASSWORD)
+    VALUES('Em0002', '鈴木二郎', '研修部', '7700-0002', 'password');
+INSERT INTO T_EMPLOYEE
+    (ID, NAME, SECTION, PHONE, PASSWORD)
+    VALUES('Em0003', '鈴木三郎', '研修部', '7700-0003', 'password');
+INSERT INTO T_EMPLOYEE
+    (ID, NAME, SECTION, PHONE, PASSWORD)
+    VALUES('Master', '管理太郎', '管理部', '0000-0001', 'password');
+
+/* TABLEイメージ */
++--------+--------------+-----------+-----------+----------+
+| ID     | NAME         | SECTION   | PHONE     | PASSWORD |
++--------+--------------+-----------+-----------+----------+
+| Em0001 | 鈴木一郎	| 研修部     | 7700-0101 | password |
+| Em0002 | 多村正人	| 研修部     | 7700-0102 | password |
+| Em0003 | 松田明美	| 開発部     | 7701-0103 | password |
+| Master | 管理者		| 管理部     | 0000-0000 | password |
++--------+--------------+-----------+-----------+----------+

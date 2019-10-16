@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>販売支援システム</title>
+</head>
+<body>
+  <!-- 見出し -->
+  <div align="center">
+    <h1>従業員管理システム</h1>
+    <br>
+    <h2>メニュー</h2>
+    <br>
+  </div>
+
+  <!-- メニュー -->
+  <!-- フォーム -->
+  <form action="./controller" method="POST">
+
+    <div align="center">
+      <!-- ボタンID用フィールド -->
+      <input type="hidden" name="BUTTON_ID" value=""> <b>商品管理システム</b><br>
+      <input type="button" value="検索"
+        onclick="this.form.BUTTON_ID.value='UC002_01'; this.form.submit()"><br>
+      <input type="button" value="全検索"
+        onclick="this.form.BUTTON_ID.value='UC002_02'; this.form.submit()"><br>
+      <input type="button" value="追加"
+        onclick="this.form.BUTTON_ID.value='UC002_03'; this.form.submit()"><br>
+      <input type="button" value="削除"
+        onclick="this.form.BUTTON_ID.value='UC002_04'; this.form.submit()"><br>
+      <input type="button" value="更新"
+        onclick="this.form.BUTTON_ID.value='UC002_05'; this.form.submit()"><br>
+      <br>
+    </div>
+    <div align="right">
+      <input type="submit" value="ログアウト"
+        onclick="this.form.BUTTON_ID.value='UC999_01'; this.form.submit()">
+    </div>
+
+  </form>
+</body>
+</html>
